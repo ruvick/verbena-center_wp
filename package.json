@@ -1,0 +1,58 @@
+{
+  "name": "verbena",
+  "version": "1.0.1",
+  "description": "verbena",
+  "main": "index.php",
+  "scripts": {
+    "test": "editorconfig-checker",
+    "clear_r": "ssh verbena_ruvick@verbena.beget.tech \"rm verbena-center.ru//public_html/wp-content/themes/verb/*.*\"",
+    "send_r": "scp -C *.php *.png *.css verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "send_ms": "scp -C *.css verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "send_one": "scp -C page-home.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "send_one1": "scp -C page-house.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "send_head": "scp -C header.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "send_cat": "scp -C category.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "send_singl": "scp -C single.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "send_index": "scp -C index.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "send_func": "scp -C functions.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "send_futt": "scp -C footer.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "mk_part_carbon": "ssh verbena_ruvick@verbena.beget.tech \"mkdir -p verbena-center.ru//public_html/wp-content/themes/verb/inc\"",
+    "send_carbon": "scp -C -r inc verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "send_carbon_fild": "scp -C -r themes-fields.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "mk_part_dir": "ssh verbena_ruvick@verbena.beget.tech \"mkdir -p verbena-center.ru//public_html/wp-content/themes/verb/template-parts\"",
+    "send_part": "scp -C -r template-parts verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "mk_part_img": "ssh verbena_ruvick@verbena.beget.tech \"mkdir -p verbena-center.ru//public_html/wp-content/themes/verb/img\"",
+    "send_img": "scp -r img verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "mk_part_images": "ssh verbena_ruvick@verbena.beget.tech \"mkdir -p verbena-center.ru//public_html/wp-content/themes/verb/images\"",
+    "send_images": "scp -r images *.svg verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "mk_part_js": "ssh verbena_ruvick@verbena.beget.tech \"mkdir -p verbena-center.ru//public_html/wp-content/themes/verb/js\"",
+    "send_js": "scp -r js verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "mk_part_css": "ssh verbena_ruvick@verbena.beget.tech \"mkdir -p verbena-center.ru//public_html/wp-content/themes/verb/css\"",
+    "send_css": "scp -C -r css verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "mk_part_fonts": "ssh verbena_ruvick@verbena.beget.tech \"mkdir -p verbena-center.ru//public_html/wp-content/themes/verb/fonts\"",
+    "send_fonts": "scp -C -r verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "group_media": "group-css-media-queries css/main.css css/g_main.css",
+    "send_all": "npm run send_r & npm run send_css & npm run send_part & npm run send_img & npm run send_image & npm run send_js & npm run send_fonts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruvick/verbena-center_wp.git"
+  },
+  "keywords": [
+    "wp",
+    "WordPress"
+  ],
+  "author": "ruvick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruvick/verbena-center_wp/issues"
+  },
+  "homepage": "https://github.com/ruvick/verbena-center_wp#readme",
+  "dependencies": {
+    "editorconfig-checker": "^3.1.0",
+    "group-css-media-queries": "^1.4.1",
+    "postcss-cli": "^7.1.2",
+    "postcss-csso": "^4.0.0",
+    "postcss-import": "^12.0.1"
+  }
+}
