@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 85.04 85.04" xml:space="preserve">
+<g>
+	<g>
+		<circle fill="#FFFFFF" stroke="#AFD46A" stroke-width="3" stroke-miterlimit="10" cx="42.561" cy="42.602" r="39.685"/>
+	</g>
+</g>
+<g id="XMLID_655_">
+	<g id="XMLID_870_">
+		
+			<polyline id="XMLID_872_" fill="none" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			39.69,28.107 37.075,28.107 37.075,25.089 		"/>
+		
+			<path id="XMLID_871_" fill="none" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M29.443,25.089v3.018h-4.034c-0.759,0-1.52,0.197-2.138,0.638c-0.791,0.565-1.619,1.627-1.836,3.62
+			c-0.021,0.194-0.022,0.394-0.013,0.589l1.101,22.138c0.087,1.746,0.466,4.511,0.757,6.45c0.21,1.402,1.271,2.511,2.656,2.812
+			c1.813,0.394,3.945,0.705,6.335,0.773c3.247,0.093,6.08-0.286,8.357-0.784"/>
+		
+			<line id="XMLID_1441_" fill="none" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="32.407" y1="28.107" x2="29.443" y2="28.107"/>
+		
+			<path id="XMLID_1439_" fill="none" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M37.231,19.057h-7.944c-0.633,0-1.146,0.513-1.146,1.146v4.886h10.235v-4.886C38.376,19.57,37.863,19.057,37.231,19.057z"/>
+		
+			<line id="XMLID_1438_" fill="none" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="28.141" y1="22.073" x2="33.259" y2="22.073"/>
+	</g>
+	<g id="XMLID_124_">
+		<polyline id="XMLID_135_" fill="#D7EAE6" points="30.229,46.702 26.954,44.763 26.954,41.334 30.229,39.395 33.504,41.334 
+			33.504,44.763 		"/>
+		<polyline id="XMLID_134_" fill="#D7EAE6" points="41.39,44.763 41.39,41.334 38.115,39.395 34.84,41.334 34.84,44.763 
+			38.115,46.702 		"/>
+		<polygon id="XMLID_133_" fill="#D7EAE6" points="37.455,51.023 37.455,47.594 34.18,45.655 30.905,47.594 30.905,51.023 
+			34.18,52.962 		"/>
+	</g>
+	<g id="XMLID_113_">
+		<g id="XMLID_873_">
+			
+				<polyline id="XMLID_1605_" fill="none" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				50.897,19.586 60.681,19.586 57.681,57.548 50.897,57.548 50.896,57.548 44.244,57.548 40.722,19.586 50.896,19.586 			"/>
+			
+				<line id="XMLID_1604_" fill="none" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="60.402" y1="23.109" x2="41.049" y2="23.109"/>
+			
+				<polyline id="XMLID_1603_" fill="none" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+				44.244,57.548 44.244,64.855 57.64,64.855 57.64,57.548 			"/>
+			
+				<line id="XMLID_1601_" fill="none" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="45.41" y1="19.586" x2="45.41" y2="21.12"/>
+			
+				<line id="XMLID_1599_" fill="none" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="50.612" y1="19.586" x2="50.612" y2="21.12"/>
+			
+				<line id="XMLID_1597_" fill="none" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="55.814" y1="19.586" x2="55.814" y2="21.12"/>
+		</g>
+		<path id="XMLID_123_" fill="#D7EAE6" d="M52.611,35.451c0.37,0.57,0.402,0.646,0.781,1.305c0.85,1.478,1.585,3.029,1.585,3.966
+			c0,2.187-1.779,3.966-3.966,3.966c-2.187,0-3.966-1.779-3.966-3.966c0-1.958,3.209-6.591,3.966-7.655L52.611,35.451z"/>
+	</g>
+</g>
+</svg>
