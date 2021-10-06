@@ -20,6 +20,7 @@
   <link rel="profile" href="https://gmpg.org/xfn/11">
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/img/favicon/verbena-fav.png" type="image/png">
 <!--  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline'; connect-src * 'self' 'unsafe-inline'; img-src * 'self' 'unsafe-inline'; ">-->
+<link rel='stylesheet' id='fonts-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A300%2C400%2C500&#038;display=swap&#038;subset=cyrillic&#038;ver=5.7.3' type='text/css' media="print" onload="this.media='all'" />
   <?php wp_head(); ?>
   
 <!-- Global site tag (gtag.js) - Google Analytics clkverbena@gmail.com -->
@@ -35,7 +36,7 @@
 	
 	
 	<!-- Marquiz script start -->
-	<script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
+	<scrip async src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
 	<script>
 	document.addEventListener("DOMContentLoaded", function() {
 	  Marquiz.init({ 
@@ -51,7 +52,7 @@
 
 	<meta name="yandex-verification" content="c432f0e101280af9" />	
 	
-	<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?162",t.onload=function(){VK.Retargeting.Init("VK-RTRG-403677-9zCmN"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-403677-9zCmN" style="position:fixed; left:-999px;" alt=""/></noscript>
+	<!-- <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?162",t.onload=function(){VK.Retargeting.Init("VK-RTRG-403677-9zCmN"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-403677-9zCmN" style="position:fixed; left:-999px;" alt=""/></noscript> -->
 	
 	
 	
