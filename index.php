@@ -150,9 +150,9 @@ get_header();
       <div class="leaf-2 b-lazy" data-src="<?php echo get_template_directory_uri(); ?>/img/leaf-2.png"></div>
       <div class="container">
         <div class="about-wrapper">
-          <div class="about-wrapper__photo b-lazy" data-src="<?php echo get_template_directory_uri(); ?>/img/main.jpg"></div>
+          <div class="about-wrapper__photo b-lazy" data-src="<?php echo get_template_directory_uri(); ?>/img/main-min.jpg"></div>
           <div class="about-wrapper__text text_full">
-            <h2 class="section-title "><?php echo carbon_get_theme_option('as_about_main'); ?></h2>
+            <h1 class="section-title "><?php echo carbon_get_theme_option('as_about_main'); ?></h1>
             <?php echo wpautop(carbon_get_theme_option('as_about_text')); ?>
           </div>
         </div>

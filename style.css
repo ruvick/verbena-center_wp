@@ -1078,6 +1078,7 @@ a {
 }
 .about-wrapper__text .section-title {
   margin-top: 0;
+  margin-bottom: 0.8em;
   text-align: center;
 }
 
@@ -2065,8 +2066,8 @@ a {
 }
 
 .apparat_img {
-      width: 260px;
-    height: 259px;
+    width: 380px;
+    height: 350px;
 
   margin-bottom:0;
 }
