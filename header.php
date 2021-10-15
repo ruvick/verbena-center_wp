@@ -14,6 +14,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+<meta name="facebook-domain-verification" content="cnb2r6udmlkn5jgezbzrhi16evvy23" />
   <meta name="cmsmagazine" content="f7245597f5b3579a3db3d69ddef2a8bf" />
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,7 +54,7 @@
 	<meta name="yandex-verification" content="c432f0e101280af9" />	
 	
 	<!-- <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?162",t.onload=function(){VK.Retargeting.Init("VK-RTRG-403677-9zCmN"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-403677-9zCmN" style="position:fixed; left:-999px;" alt=""/></noscript> -->
-	<script async>
+	<script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
