@@ -3927,6 +3927,18 @@ font-size: 18px;
   padding-bottom: 12px;
   margin-bottom: 20px;
 }
+
+.card_blk{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.card_blk img{ 
+    margin: 0 10px;
+}
+
 @media only screen and (max-width:1700px) {
   .entry-content-page .rose {
     width: 150px;
@@ -4469,6 +4481,14 @@ font-size: 18px;
   }
   .summer {
     background-position: -300px bottom;
+  }
+
+  .card_blk {
+    flex-direction: column;
+  }
+
+  .card_blk img{ 
+    margin: 10px 0;
   }
 }
 
