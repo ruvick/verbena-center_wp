@@ -301,8 +301,8 @@ Container::make('post_meta', 'verb_subserice_video', 'Видео процеду�
   ->show_on_template('page-subserice.php')
   ->add_fields(array(
     Field::make('checkbox', 'verb_subserice_video_is_show', 'Отображать блок'),
-	Field::make('text', 'verb_subserice_video_h2', 'Заголовок над видео'),
-    Field::make('textarea', 'verb_subserice_video', 'Видео')
+	  Field::make('text', 'verb_subserice_video_h2', 'Заголовок над видео'),
+    Field::make('rich_text', 'verb_subserice_video', 'Видео 1')
       ->set_width(50),
   ));
   

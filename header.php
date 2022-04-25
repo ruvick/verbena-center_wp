@@ -120,7 +120,7 @@
         <div class="box-modal_close arcticmodal-close"><img src = "<?php bloginfo("template_url");?>/img/close-button.svg"></div>
         <div class = "modalline" id = "lineIcon">
           <div class="box-modal-bg"></div>
-          <form action="">
+          <form class = "big_modal_form" action="">
             <input type="text" name="name" placeholder="Имя">
             <input type="tel" name="tel" placeholder="Телефон">
 			<span class="note noteInWin">Нажимая на кнопку «Отправить» Вы принимаете условия политики конфиденциальности в отношении обработки персональных данных</span>

@@ -1113,7 +1113,8 @@ a {
 }
 
 .about-wrapper__photo {
-  height: 378px
+  height: 378px;
+  margin: auto 0;
 }
 
 .services {
@@ -1322,12 +1323,19 @@ a {
   overflow-x: hidden
 }
 
+.video-tour-no-wrap .container-video{
+  border: 22px solid #a0d444;
+  background-color: #a0d444;
+}
+
 .container-video {
   width: 950px;
   margin-left: auto;
   margin-right: auto;
-  border: 22px solid #fff;
-  background-color: #fff
+  border: 22px solid #ffffff;
+  background-color: #fcedea;
+  display: flex;
+    justify-content: center;
 }
 
 
@@ -1679,7 +1687,7 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  /*background-image: url(./img/rose.png)*/
+  background-image: url(./img/rose.png)
 }
 
 .leaf-1 {
@@ -1808,7 +1816,7 @@ a {
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
-  /*background-image: url(./img/flower-1.png);*/
+  background-image: url(./img/flower-1.png);
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg)
 }
@@ -2673,7 +2681,7 @@ font-size: 18px;
 }
 .box-modal {
   position: relative;
-  width: 500px;
+  width: 580px;
   margin: auto;
   padding: 16px;
   background: #fff;
@@ -2693,8 +2701,16 @@ font-size: 18px;
   -ms-flex-direction: column;
   -o-flex-direction: column;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 35px;
   margin-bottom:30px;
+}
+
+.big_modal_form {
+  margin-bottom: 0;
+}
+
+.big_modal_form h2{
+  margin-top: 0;
 }
 
 .arcticmodal-close img{
@@ -2785,13 +2801,13 @@ font-size: 18px;
   justify-content: space-around;
 }
 .box-modal-bg {
-  width: 200px;
+  width: 275px;
   margin-bottom: -16px;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
   background-position: bottom;
-  background-image: url(./img/admin-1.png);
+  background-image: url(./img/modsl-girl.png);
 }
 
 .box-modal-bg-sale {
@@ -5541,11 +5557,11 @@ margin-top:30px;
     margin-top: 30px;
   }
   #price-page-modal .modalline {
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    -o-flex-direction: column-reverse;
+    flex-direction: column-reverse;
     -ms-align-items: center;
     align-items: center;
   }
@@ -5556,7 +5572,7 @@ margin-top:30px;
     font-size: 17px;
   }
   .about-wrapper__photo {
-    height: 200px;
+    height: 250px;
   }
   .header .container {
     -webkit-flex-wrap: nowrap;
@@ -5621,7 +5637,7 @@ margin-top:30px;
     padding-right: 0;
   }
   .team-photo {
-    height: 250px;
+    height: 165px;
     margin-bottom: 30px;
   }
   .consult-spec__item-img {

@@ -65,6 +65,26 @@
 		</div>
 		
 	</div>
+
+
+	<div class="team-container__row-1">
+		<div class="team-container__item">
+			<a href = "<?php echo get_the_permalink(1818);?>">
+			<div class="team-container__item-header">
+				<div class="team-container__item-photo b-lazy" data-src="<?php echo get_the_post_thumbnail_url(1818);?>"></div>
+				<div class="team-container__item-name animbtnNew"><?php echo get_the_title(1818)?></div>
+			</div>
+			</a>
+			<div class="team-container__item-descr">
+				<?php echo carbon_get_post_meta(1818, 'verb_position_excerpt')?>
+			</div>
+			<div class="team-container__item-btn">
+				<a href="#" class="button-green popup-content" data-person="<?php echo get_the_title(1818)?>" data-formid="Запись на прием <?php echo get_the_title(1818)?>" data-mailmsg="Запись на прием <?php echo get_the_title(1818)?>">Записаться на прием</a>
+				<a href="#" class="button-green popup-review" data-person="<?php echo get_the_title(1818)?>" data-formid="Оставить отзыв <?php echo get_the_title(1818)?>" data-mailmsg="Оставить отзыв <?php echo get_the_title(1818)?>">Оставить отзыв</a>
+			</div>
+		</div>
+	</div>
+
 	<div class="team-container__row-2">
 		<div class="team-container__item">
 			<a href = "<?php echo get_the_permalink(86);?>">

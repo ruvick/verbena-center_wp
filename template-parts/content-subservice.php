@@ -557,7 +557,7 @@ $arr_col_1 = carbon_get_the_post_meta('verb_subserice_vidi_uslug_col');
     <?php get_template_part('template-parts/reviews');?>
   </div>
   <?php if(carbon_get_the_post_meta('verb_subserice_video_is_show')):?>
-    <section class="video-tour">
+    <section class="video-tour video-tour-no-wrap section-green">
       <div class="flower-1"></div>
       <div class="rose-2"></div>
       <div class="container">
@@ -569,7 +569,7 @@ $arr_col_1 = carbon_get_the_post_meta('verb_subserice_vidi_uslug_col');
 		</h2>
       </div>
       <div class="container-video">
-        <?php echo carbon_get_the_post_meta('verb_subserice_video');?>
+        <?php echo apply_filters( 'the_content', carbon_get_the_post_meta('verb_subserice_video'));?>
       </div>
     </section>
   <?php endif;?>
