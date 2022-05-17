@@ -1338,6 +1338,10 @@ a {
     justify-content: center;
 }
 
+.container-video-video {
+  width: 683px;
+  border: 22px solid #ffffff!important;
+}
 
 
 .reviews {

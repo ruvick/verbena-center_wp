@@ -568,7 +568,7 @@ $arr_col_1 = carbon_get_the_post_meta('verb_subserice_vidi_uslug_col');
 			?>
 		</h2>
       </div>
-      <div class="container-video">
+      <div class="container-video container-video-video">
         <?php echo apply_filters( 'the_content', carbon_get_the_post_meta('verb_subserice_video'));?>
       </div>
     </section>

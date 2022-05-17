@@ -170,15 +170,17 @@ get_header();
     <?php get_template_part('template-parts/preim'); ?>
 
     <?php
-    require_once __DIR__ . '/Mobile_Detect.php';
-    $detect = new Mobile_Detect;
+    // require_once __DIR__ . '/Mobile_Detect.php';
+    // $detect = new Mobile_Detect;
 
-    if (!$detect->isMobile()) {
-      get_template_part('template-parts/videotur');
-    }
+    // if ($detect->isMobile()) {
+    //   get_template_part('template-parts/videotur');
+    // }
     ?>
 
-    <?php //get_template_part('template-parts/videotur');
+
+    <?php 
+      get_template_part('template-parts/videotur');
     ?>
     <?php get_template_part('template-parts/reviews'); ?>
     <?php get_template_part('template-parts/news'); ?>

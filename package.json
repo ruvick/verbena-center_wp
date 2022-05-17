@@ -8,7 +8,7 @@
     "clear_r": "ssh verbena_ruvick@verbena.beget.tech \"rm verbena-center.ru//public_html/wp-content/themes/verb/*.*\"",
     "send_r": "scp -C *.php *.png *.css verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
     "send_ms": "scp -C *.css verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
-    "send_one": "scp -C content-team.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "send_one": "scp -C content-subservice.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
     "send_one1": "scp -C page-house.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
     "send_head": "scp -C header.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
     "send_cat": "scp -C category.php verbena_ruvick@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
