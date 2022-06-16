@@ -6,7 +6,7 @@
 	<?php endif;?>
 
 
-<section class="action-header" style = "background-color: #fdf0ed;">
+<section class="action-header" style = "background-color: #f7ece8;">
 	<div class="container">
 		<div class="action-header__content">
 			<span class = "sTop">Программа лояльности</span> <span class = "sCenter">для постоянных клиентов</span> <span class = "sBoot">«Verbena - Premium»</span>
