@@ -228,11 +228,14 @@
 	
 		
 		<div class="header-contacts">
-          <a href="tel:<?php echo str_replace(' ', '', carbon_get_theme_option('as_phone')); ?>" class="header-phone-icon"><img src = "<?php bloginfo("template_url")?>/img/phone-call.svg" /></a>
+      <a href="tel:<?php echo str_replace(' ', '', carbon_get_theme_option('as_phone')); ?>" class="header-phone-icon"><img src = "<?php bloginfo("template_url")?>/img/phone-call.svg" /></a>
 		  <a href="tel:<?php echo str_replace(' ', '', carbon_get_theme_option('as_phone')); ?>" class = "header-phone"><?php echo carbon_get_theme_option('as_phone'); ?></a>
-          <a href="#" class="button popup-content header-phone-button animbtnNew" data-formid="Заявка с шапки сайта" data-mailmsg="Заявка с шапки сайта">Записаться онлайн</a>
+      <a href="#" class="button popup-content header-phone-button animbtnNew" data-formid="Заявка с шапки сайта" data-mailmsg="Заявка с шапки сайта">Записаться онлайн</a>
         </div>
-      </div>
-    </header>
+    </div>
+  </header>
 
     <div id="content" class="site-content">
+      <!-- <div class="dialog-cb-button dialog-cb-button__decstop">
+        <a href="<?php echo carbon_get_theme_option('as_whatsapp'); ?>" class="dialog-cb-button-link"></a> 
+      </div> -->

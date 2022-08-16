@@ -55,9 +55,11 @@ Container::make( 'theme_options', 'as_theme_options',  __( 'Theme Options' ) )
           ->set_width(50),
         Field::make( 'text', 'as_address', __( 'Адрес' ) )
           ->set_width(50),
-        Field::make( 'text', 'as_vk', __( 'Вконтакте' ) )
+        Field::make( 'text', 'as_vk', __( 'Вконтакте' ) ) 
           ->set_width(50),
         Field::make( 'text', 'as_insta', __( 'Инстаграм' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_whatsapp', __( 'whatsapp' ) )
           ->set_width(50),
 		  
     		Field::make( 'text', 'as_grafik_bud', __( 'График (будние)' ) )
