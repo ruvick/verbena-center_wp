@@ -77,7 +77,7 @@
 
   <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?169',t.onload=function(){VK.Retargeting.Init("VK-RTRG-1108167-d5ywu"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1108167-d5ywu" style="position:fixed; left:-999px;" alt=""/></noscript>
 
-  <div class = "zakrBtn">
+  <!-- <div class = "zakrBtn">
 	<a target = "_blank" href = "https://wa.me/+79207195503">
 		<div class = "zbtn wsBtn"></div>
 	</a>
@@ -85,7 +85,13 @@
 	<a class = "popup-zvonok" data-formid = "Форма в нижнем углу экрана" data-mailmsg = "Заказ обратного звонка" href = "#">
 		<div class = "zbtn phoneBtn "></div>
 	</a>
-  </div>
+  </div> -->
+
+  <a href = "https://wa.me/+79207195503" class="yButton bottom left" target="_blank" rel="nofollow" style="z-index: 10000;" title="Напишите нам!">
+    <div class="yButtonBackground" style="background-color: #4be15a;"></div>
+    <div class="yButtonWave" style="border-color: #4be15a; color: #4be15a;"></div>
+    <div class="yButtonText"><img src="<?php bloginfo("template_url");?>/img/wtsup.svg" style=" position: relative; top: -19px;" data-bx-orig-src="<?php bloginfo("template_url");?>/img2/wtsup.svg"></div>
+  </a>
   
   <div style="display: none;">
     <div class="box-modal" id="messgeModal">
