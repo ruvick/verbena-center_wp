@@ -6260,6 +6260,10 @@ table thead th,
     margin-bottom: 30px;
   }
 
+  .team-container__row-1:first-child {
+    margin-top: 40px;
+  }
+
   .consult-spec__item-img {
     margin-right: 10px;
   }
