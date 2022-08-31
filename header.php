@@ -228,6 +228,13 @@
 	        <span>Поиск</span>
 	        <img src="<?php echo get_template_directory_uri();?>/img/search.svg" alt="">
 	      </div>
+        
+        <div class="header-eye">
+            <a href="#" class="bvi-open">
+              <img src="<?php echo get_template_directory_uri();?>/img/eye.svg" title="Версия для слабовидящих" alt="Версия для слабовидящих">
+            </a>
+        </div>
+
 	    <div class = "header-contacts-trub">
 			<a href="tel:<?php echo carbon_get_theme_option('as_phone'); ?>" class = "header-phone-new"><?php echo carbon_get_theme_option('as_phone'); ?></a>
 		</div>

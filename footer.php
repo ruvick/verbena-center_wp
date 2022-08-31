@@ -30,14 +30,20 @@
       <a href="tel:<?php echo str_replace(' ', '', carbon_get_theme_option('as_phone')); ?>"><?php echo carbon_get_theme_option('as_phone'); ?></a>
       <a href="tel:<?php echo carbon_get_theme_option('as_phone_2'); ?>"><?php echo carbon_get_theme_option('as_phone_2'); ?></a>
       <div class=""><?php echo carbon_get_theme_option('as_address'); ?></div>
-	  <div class = "hovtoe">
-		<a target="_blank" href = "https://yandex.ru/maps/8/kursk/?ll=36.149375%2C51.740981&mode=search&oid=112042236281&ol=biz&z=18">Как добраться</a>
-	  </div>
+	  
+      <div class = "hovtoe">
+		  <a target="_blank" href = "https://yandex.ru/maps/8/kursk/?ll=36.149375%2C51.740981&mode=search&oid=112042236281&ol=biz&z=18">Как добраться</a>
+	    </div>
+
+      <iframe src="https://yandex.ru/sprav/widget/rating-badge/112042236281" width="150" height="50" frameborder="0"></iframe>
+
     </div>
   </div>
   <div class="container footer-bottom">
     Информация, предоставленная на данном сайте не является публичной офертой или коммерческим предложением. Вся информация размещена с ознакомительной целью и не должна использоваться для самостоятельной диагностики либо лечения. Имеются противопоказания, необходима консультация специалиста.
   </div>
+
+  
 </footer>
 </div><!-- #page -->
 

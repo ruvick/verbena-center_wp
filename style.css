@@ -3772,6 +3772,7 @@ table thead th,
 .hovtoe a {
   font-size: 18px;
   text-decoration: underline;
+  margin-bottom: 20px;
 }
 
 .hovtoe:before {
@@ -4132,6 +4133,7 @@ table thead th,
   font-size: 20px !important;
 }
 
+.header-eye,
 .header-search {
   display: -webkit-flex;
   display: -moz-flex;
@@ -4152,8 +4154,16 @@ table thead th,
   padding-right: 14px;
 }
 
+.header-eye img,
 .header-search img {
   max-width: 20px;
+}
+
+
+.header-eye img {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
 }
 
 #search-modal {
