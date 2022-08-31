@@ -4150,6 +4150,10 @@ table thead th,
   color: #262626;
 }
 
+.header-eye {
+  margin: auto 0 auto 10px;
+}
+
 .header-search span {
   padding-right: 14px;
 }
@@ -4161,8 +4165,8 @@ table thead th,
 
 
 .header-eye img {
-  width: 20px;
-  height: 20px;
+  min-width: 23px;
+  height: 23px;
   margin-top: 4px;
 }
 
