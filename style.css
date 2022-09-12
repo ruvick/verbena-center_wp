@@ -5773,6 +5773,21 @@ table thead th,
 
 @media only screen and (max-width:480px) {
 
+  .footer-contacts {
+    text-align: right;
+    margin-top: 20px
+  }
+
+  .hovtoe {
+    position:relative
+  }
+
+  .hovtoe:before {
+    position: absolute;
+    right: 135px;
+    top: 1px;
+    float: none;
+  }
 
   .container-person .container-position__photo {
     margin-left: 0;
