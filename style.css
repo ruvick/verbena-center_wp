@@ -5782,6 +5782,11 @@ table thead th,
     position:relative
   }
 
+  .adr {
+    width: 63%;
+    margin-left: auto;
+  }
+
   .hovtoe:before {
     position: absolute;
     right: 135px;
