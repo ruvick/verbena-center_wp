@@ -29,7 +29,7 @@
     <div class="footer-contacts">
       <a href="tel:<?php echo str_replace(' ', '', carbon_get_theme_option('as_phone')); ?>"><?php echo carbon_get_theme_option('as_phone'); ?></a>
       <a href="tel:<?php echo carbon_get_theme_option('as_phone_2'); ?>"><?php echo carbon_get_theme_option('as_phone_2'); ?></a>
-      <div class=""><?php echo carbon_get_theme_option('as_address'); ?></div>
+      <div class="adr"><?php echo carbon_get_theme_option('as_address'); ?></div>
 	  
       <div class = "hovtoe">
 		  <a target="_blank" href = "https://yandex.ru/maps/8/kursk/?ll=36.149375%2C51.740981&mode=search&oid=112042236281&ol=biz&z=18">Как добраться</a>
