@@ -137,7 +137,7 @@ function verb_scripts() {
 //	wp_enqueue_style( 'fonts', '//fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap&subset=cyrillic');
 	wp_enqueue_style( 'arctic', get_template_directory_uri() . '/css/jquery.arcticmodal-0.3.css', array(), null, 'all');
 	wp_enqueue_style('lightbox', get_template_directory_uri() . '/css/lightbox.min.css', array(), null, 'all');
-	wp_enqueue_style( 'verb-style', get_stylesheet_uri(), array(), "1.0.67", "all" );
+	wp_enqueue_style( 'verb-style', get_stylesheet_uri(), array(), "1.0.69", "all" );
 
 	wp_enqueue_script('jquery');
 
