@@ -236,7 +236,7 @@ add_action( 'wp_ajax_universal_send_review', 'universal_send_review' );
         'content-type: text/html',
       );
     
-      add_filter('wp_mail_content_type', mailHeader);
+    //   add_filter('wp_mail_content_type', "text/html");
       if ($_REQUEST["qvm"] === "1") {
 		if (wp_mail(carbon_get_theme_option( 'as_email_send' ), 'Вопрос с сайта', '<strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"]. '<br/><strong>Вопрос: </strong>' . $_REQUEST['review'], $headers))
 		{
@@ -290,7 +290,7 @@ add_action( 'wp_ajax_universal_send_review', 'universal_send_review' );
         'content-type: text/html',
       );
     
-      add_filter('wp_mail_content_type', mailHeader);
+    //   add_filter('wp_mail_content_type', "text/html");
       //carbon_get_theme_option( 'as_email_send' )
       if (wp_mail(carbon_get_theme_option( 'as_email_send' ), $title_mail, '<strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"], $headers))
 	  {
@@ -303,9 +303,11 @@ add_action( 'wp_ajax_universal_send_review', 'universal_send_review' );
       wp_die( 'НО-НО-НО!', '', 403 );
     }
   }
-add_filter('excerpt_more', function($more) {
+
+  add_filter('excerpt_more', function($more) {
 	return '...';
 });
+
 /*
   add_filter('single_template', create_function(
 	'$the_template',
