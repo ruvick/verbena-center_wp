@@ -1,7 +1,11 @@
 <div class="services-wrapper">
       <a href="<?php echo get_the_permalink(5);?>" class="service-item">
         <div class="service-item__photo b-lazy" data-src="<?php echo get_template_directory_uri();?>/img/service-1.jpg"></div>
-        <div class="service-item__title">Лазерная косметология</div>
+        <div class="service-item__title">Лазерная косметология</div> 
+      </a>
+      <a href="<?php echo get_the_permalink(1885);?>" class="service-item">
+        <div class="service-item__photo b-lazy" data-src="<?php echo get_template_directory_uri();?>/img/service-7.jpg"></div>
+        <div class="service-item__title">СМАС ЛИФТИНГ АЛЬТЕРА</div> 
       </a>
       <a href="<?php echo get_the_permalink(20);?>" class="service-item">
         <div class="service-item__photo b-lazy" data-src="<?php echo get_template_directory_uri();?>/img/service-3.jpg"></div>
