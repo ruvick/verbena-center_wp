@@ -2146,6 +2146,7 @@ a {
 
 .header-service .main-slider__item-content-text {
   max-width: 100%;
+  margin-top: auto;
 }
 
 .header-service .main-slider__item-photo {
@@ -2211,6 +2212,13 @@ a {
 .apparat_img {
   width: 380px;
   height: 350px;
+
+  margin-bottom: 0;
+}
+
+.apparat_img_2 {
+  width: 380px;
+  height: 410px;
 
   margin-bottom: 0;
 }
