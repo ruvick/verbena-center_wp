@@ -31,7 +31,7 @@
 
 			<div class="question-soc">
 	          <ul class="ul-clean">
-	            <li><a href="<?php echo carbon_get_theme_option('as_vk');?>" style="background-image: url(<?php echo get_template_directory_uri()?>/img/instagram-green.svg);"></a></li>
+	            <li><a href="<?php echo carbon_get_theme_option('as_vk');?>" style="background-image: url(<?php echo get_template_directory_uri()?>/img/telegram.svg);"></a></li>
 	            <li><a href="<?php echo carbon_get_theme_option('as_insta');?>" style="background-image: url(<?php echo get_template_directory_uri()?>/img/vk-green.svg);"></a></li>
 	          </ul>
 			</div>

@@ -19,7 +19,11 @@
       <div class="footer-name">© ООО Центр Лечебной Косметологии "Вербена"</div>
       <div class="footer-licence">Медицинская лицензия №ЛО-46-01-002067 <br/>от 03 декабря 2018 года  выдана Комитетом <br/>здравоохранения Курской области, 305000.</div>
       <div class="footer-string">г. Курск, Красная пл., 6, +7(471) 251-47-20</div>
+      <a class = "policy_footer_lnk" href="<?php the_permalink(1939)?>">Персональные данные</a>
     </div>
+
+    
+    
     <!-- <div class="footer-soc">
       <ul class="ul-clean">
         <li><a href="#" style="background-image: url(<?php echo get_template_directory_uri();?>/img/instagram.svg)"></a></li>

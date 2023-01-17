@@ -96,7 +96,9 @@
           <form action="" >
             <input type="text" name="name" placeholder="Имя">
             <input type="tel" name="tel" placeholder="Телефон">
-			<span class="note noteInWin">Нажимая на кнопку «Отправить» Вы принимаете условия политики конфиденциальности в отношении обработки персональных данных</span>
+			
+            <?php get_template_part('template-parts/form-policy-element'); ?>
+            
             <a href="#" class="uniSendBtn button-green" onclick="ym(47540161, 'reachGoal', 'Zayavka'); ga('send', 'event', 'Zayavki', 'Zayavka_G'); return true;">Отправить</a>
           </form>
     </div>
@@ -114,7 +116,9 @@
           <form class = "big_modal_form" action="">
             <input type="text" name="name" placeholder="Имя">
             <input type="tel" name="tel" placeholder="Телефон">
-			<span class="note noteInWin">Нажимая на кнопку «Отправить» Вы принимаете условия политики конфиденциальности в отношении обработки персональных данных</span>
+			
+            <?php get_template_part('template-parts/form-policy-element'); ?>
+
             <a href="#" class="uniSendBtn button-green" onclick="ym(47540161, 'reachGoal', 'Zakaz_zvonka'); ga('send', 'event', 'Zayavki', 'Zakaz_zvonka_G'); return true;">Заказать звонок</a>
           </form>
     </div>
@@ -182,7 +186,7 @@
             <input type="tel" name="tel" placeholder="Телефон">
             <textarea name="review" id="" placeholder = "Отзыв"></textarea>
 			
-			<span class="note noteInWin">Нажимая на кнопку «Отправить» Вы принимаете условия политики конфиденциальности в отношении обработки персональных данных</span>
+            <?php get_template_part('template-parts/form-policy-element'); ?>
 			
             <a href="#" class="uniSendBtn-review button-green" onclick="ym(47540161, 'reachGoal', 'Otziv'); ga('send', 'event', 'Zayavki', 'Otziv_G'); return true;">Отправить</a>
           </form>

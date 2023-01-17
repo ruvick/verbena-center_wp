@@ -194,6 +194,10 @@ button:-moz-focusring {
   outline: 1px dotted ButtonText
 }
 
+/* input[type=checked] { 
+  border: #84cc3a;
+} */
+
 .button-white {
   background-color: white;
 }
@@ -3338,10 +3342,25 @@ table thead th,
 
 .noteInWin {
   margin-top: 0px;
-  margin-left: 12px;
   font-size: 12px;
   max-width: 225px;
   margin-bottom: 10px;
+  display: flex;
+  width:100%;
+}
+
+.noteInWin input{ 
+  margin-right: 10px;
+  height: fit-content;
+  margin-top: 3px;
+}
+
+.noteInWin a{ 
+  color:green
+}
+
+.noteInWin a:hover{ 
+  text-decoration: underline;
 }
 
 .form-page__content-title {
@@ -4770,7 +4789,11 @@ table thead th,
 
 
 
-
+a.policy_footer_lnk {
+  color: white;
+  margin-top: 20px;
+  display: inline-block;
+}
 
 
 
@@ -6523,6 +6546,20 @@ table thead th,
 
   .multilevel-menu>.sub-menu {
     max-height: inherit !important;
+  }
+
+  .yButton {
+    bottom: 20px;
+  }
+  .yButton,
+  .yButtonBackground {
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  .yButtonText {
+    width: 55px !important;
+    height: 35px !important;
   }
 
 }

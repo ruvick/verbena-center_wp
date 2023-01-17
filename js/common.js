@@ -163,10 +163,17 @@ jQuery(document).ready(function ($) {
       var formid = jQuery(this).data("formid");
       var message = jQuery(this).data("mailmsg");
       var phone = $(this).siblings('input[type=tel]').val();
+      
+      var policy = $(this).siblings('.noteInWin');
+      policy = $(policy).find('input[type=checkbox]').is(':checked');
+
       var review = $(this).siblings('textarea[name=review]').val();
       
 	  var qv = jQuery(this).data("q");
-	  
+
+      if (!policy)
+      alert("Необходимо согласие с политикой конфиденциальности и обработки персональных данных!")
+      else
       if ((phone == "")||(phone.indexOf("_")>0)) {
         $(this).siblings('input[type=tel]').css("background-color","#ff91a4")
       } else {
@@ -216,10 +223,18 @@ jQuery(document).ready(function ($) {
       var formid = jQuery(this).data("formid");
       var message = jQuery(this).data("mailmsg");
       var phone = $(this).siblings('input[type=tel]').val();
+      var policy = $(this).siblings('.noteInWin');
+      policy = $(policy).find('input[type=checkbox]').is(':checked');
       
 	  var elementTel = $(this).siblings('input[type=tel]');
 	  var elementName = $(this).siblings('input[name=name]');
 	  
+    console.log(policy)
+
+    if (!policy)
+      alert("Необходимо согласие с политикой конфиденциальности и обработки персональных данных!")
+    else
+
       if ((phone == "")||(phone.indexOf("_")>0)) {
         $(this).siblings('input[type=tel]').css("background-color","#ff91a4")
       } else {
