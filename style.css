@@ -3347,12 +3347,28 @@ table thead th,
   margin-bottom: 10px;
   display: flex;
   width:100%;
+  flex-wrap: wrap;
+}
+
+.form_in_page .noteInWin{
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.form_in_page .noteInWin span{
+width: 90%;
+}
+
+.form_in_page .noteInWin input{
+  width:13px;
+  height: 13px;
 }
 
 .noteInWin input{ 
   margin-right: 10px;
   height: fit-content;
   margin-top: 3px;
+  flex:1;
 }
 
 .noteInWin a{ 

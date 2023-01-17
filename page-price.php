@@ -10,11 +10,13 @@ get_header();
         <div class="box-modal_close arcticmodal-close"><img src = "<?php bloginfo("template_url");?>/img/close-button.svg"></div>
         <div class = "modalline" id = "lineIcon">
           <div class="box-modal-bg box-modal-bg-sale"></div>
-          <form action="">
+          <form  class="form_in_page" action="">
             <input type="text" name="name" placeholder="Имя">
             <input type="tel" name="tel" placeholder="Телефон">
-			<span class="note noteInWin">Нажимая на кнопку «Отправить» Вы принимаете условия политики конфиденциальности в отношении обработки персональных данных</span>
-            <a href="#" class="uniSendBtn button-green" data-mailmsg="Запрос на скидку" onclick="ym(47540161, 'reachGoal', 'Zakaz_zvonka'); ga('send', 'event', 'Zayavki', 'Zakaz_zvonka_G'); return true;">Получить скидку</a>
+			
+			<?php get_template_part('template-parts/form-policy-element'); ?>
+			
+			<a href="#" class="uniSendBtn button-green" data-mailmsg="Запрос на скидку" onclick="ym(47540161, 'reachGoal', 'Zakaz_zvonka'); ga('send', 'event', 'Zayavki', 'Zakaz_zvonka_G'); return true;">Получить скидку</a>
           </form>
     </div>
     

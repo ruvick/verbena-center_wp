@@ -8,7 +8,7 @@
             <input type="text" name="name" placeholder="Имя">
             <input type="tel" name="tel" placeholder="Телефон">
             <a href="#" class="button uniSendBtn" data-formid="Запись на прием с главной страницы сайта" data-mailmsg="Запись на прием с главной страницы сайта" onclick="ym(47540161, 'reachGoal', 'Zapis_na_gl2'); ga('send', 'event', 'Zayavki', 'Zapis_na_gl2_G'); return true;">Отправить</a>
-            <span class="note">Нажимая на кнопку «Отправить» Вы принимаете условия политики конфиденциальности в отношении обработки персональных данных</span>
+            <?php get_template_part('template-parts/form-policy-element'); ?>
           </form>
         </div>
       </div>
