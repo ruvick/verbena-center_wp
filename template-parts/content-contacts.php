@@ -19,7 +19,104 @@
 	<div class = "container-contacts">
 		<div class = "contacts-info">
 			
-			<div class="contacts-item">
+			<h2>Центр Лечебной Косметологии «Вербена»</h2>
+
+			<table class="contacts_table">
+				<tbody>
+					<tr>
+						<td>Адрес</td>
+						<td>305040 г. Курск, ул. Запольная, 60А</td>
+					</tr>
+					<tr>
+						<td>График работы центра</td>
+						<td>
+							Пн-Пт: с 9:00 до 20:00</br>
+							Сб-Вс: с 10:00 до 20:00
+						</td>
+					</tr>
+					<tr>
+						<td>Ресепшен</td>
+						<td>
+							<a href="tel:+74712392600">+7(4712) 39-26-00</a> 
+							</br>
+							<a href="+79107195503">+7 (910) 719-55-03</a> 
+						</td>
+					</tr>
+					<tr>
+						<td>Мы в соцсетях</td>
+						<td>
+							<div class="question-soc">
+								<ul class="ul-clean ul-clean-t0">
+									<li><a href="<?php echo carbon_get_theme_option('as_vk');?>" style="background-image: url(<?php echo get_template_directory_uri()?>/img/telegram.svg);"></a></li>
+									<li><a href="<?php echo carbon_get_theme_option('as_insta');?>" style="background-image: url(<?php echo get_template_directory_uri()?>/img/vk-green.svg);"></a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Генеральный директор
+							Абрамова Марина Сергеевна
+						</td>
+						<td>
+							<a href="tel:+74712392601">+7 (4712) 39-26-01</a> 
+						</td>
+					</tr>
+					<tr>
+						<td>График приема</td>
+						<td>По средам с 14 до 16 часов по предварительной записи</td>
+					</tr>
+					<tr>
+						<td>Главный врач
+							Гнездилова Марина Владимировна
+						</td>
+						<td>+7 (4712) 39-26-01</td>
+					</tr>
+					<tr>
+						<td>График приема</td>
+						<td>По расписанию с 14 до 15 часов, по предварительной записи</td>
+					</tr>
+					<tr>
+						<td>E-mail</td>
+						<td>clk@cosm-st.ru</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h2>График работы специалистов Центра Лечебной Косметологии «Вербена»</h2>
+			<table class="contacts_table">
+				<tbody>
+					<tr>
+						<td>Гнездилова Марина Владимировна</td>
+						<td>Понедельник, вторник, пятница с 10 до 20 часов</td>
+					</tr>
+					<tr>
+						<td>Тарасова Виктория Васильевна</td>
+						<td>Среда, четверг, воскресенье с 10 до 20 часов
+						</td>
+					</tr>
+					<tr>
+						<td>Косинова Елена Васильевна</td>
+						<td>Понедельник — Пятница с 10 до 19 часов
+						</td>
+					</tr>
+					<tr>
+						<td>Абрамова Марина Сергеевна
+						</td>
+						<td>Понедельник, среда, пятница с 14 до 16 часов</td>
+					</tr>
+					<tr>
+						<td>Боева Наталья Михайловна</td>
+						<td>Понедельник, вторник, пятница с 10 до 20 часов</td>
+					</tr>
+					<tr>
+						<td>Фатулаева Виктория Алексеевна
+						</td>
+						<td>Среда, четверг, воскресенье с 10 до 20 часов</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- <div class="contacts-item">
 				<h3>Телефоны:</h3>
 				<a itemprop="telephone" href = "tel:<?php echo carbon_get_theme_option('as_phone'); ?>"><?php echo carbon_get_theme_option('as_phone'); ?></a><br/>
 				<a itemprop="faxNumber" href = "tel:<?php echo carbon_get_theme_option('as_phone_2');?>"><?php echo carbon_get_theme_option('as_phone_2');?></a><br/>
@@ -36,20 +133,6 @@
 	          </ul>
 			</div>
 			
-			<!--
-			<div class="contacts-item">
-				<strong>ИНН:</strong> <?php echo carbon_get_theme_option('as_inn'); ?>
-			</div>
-			
-			<div class="contacts-item">
-				<strong>ОГРН:</strong> <?php echo carbon_get_theme_option('as_orgn'); ?>
-			</div>
-			
-			<div class="contacts-item">
-				<strong>КПП:</strong> <?php echo carbon_get_theme_option('as_cpp'); ?>
-			</div>
-			-->
-			
 			
 			<div class="contacts-item">
 			<h3>График работы:</h3>
@@ -65,17 +148,27 @@
 					<span itemprop="addressLocality">Курск</span>
 				</div>
 				<h2><strong>Адрес:</strong> <?php echo carbon_get_theme_option('as_address'); ?></h2>
-			</div>
+			</div> -->
+
+
 		</div>
 		
-		<div class = "photo">
-			<img class="b-lazy" 
-         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-         data-src="<?php bloginfo("template_url")?>/img/center-photo.jpg" />
+		<div class = "photo">	
+			<div class="i_wrap">	
+				<img src="<?php bloginfo("template_url")?>/img/center-photo.jpg" />
+		 	</div>
+		 	<div class="i_wrap">
+				<img src="<?php bloginfo("template_url")?>/img/center-photo_2.jpg" />
+			</div>
+			<div class="i_wrap">	
+		 		<img src="<?php bloginfo("template_url")?>/img/center-photo_3.jpg" />
+			</div>
 		</div>
 	</div>
 	<!-- Блок для ывода к опторому надо крутить стили-->
-<div id = "mapLine" class = "mapLine"></div>
+
+	<!-- <div id = "mapLine" class = "mapLine"></div> -->
+
 <!-- 
 Основной скрипт карты вставояется
 под блоком для вывода 
