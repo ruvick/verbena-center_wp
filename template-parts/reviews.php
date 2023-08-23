@@ -4,11 +4,19 @@
         <?php 
           $arr_review = carbon_get_theme_option('complex_review');
           if($arr_review):
+
+          $indexes  = array_rand( $arr_review, 13);
+  
         ?>
         <div class="reviews-slider">
-          <?php foreach($arr_review as $review):?>
+          <?php 
+            // foreach($arr_review as $review):
+            
+              foreach($indexes as $review_index):
+              $review = $arr_review[$review_index]; 
+          ?>
           <div class="reviews-slider__item">
-            <div class="reviews-slider__item-photo b-lazy" data-src="<?php echo wp_get_attachment_image_src($review['complex_review_image'], 'full')[0]?>"></div>
+            <div class="reviews-slider__item-photo b-lazy" data-src="<?php if (!empty($review['complex_review_image'])) echo wp_get_attachment_image_src($review['complex_review_image'], 'full')[0]?>"></div>
             <div class="reviews-slider__item-content">
               <div class="reviews-slider__item-name"><?php echo $review['complex_review_name']?></div>
               <div class="reviews-slider__item-date"><?php echo $review['complex_review_date']?></div>

@@ -503,3 +503,13 @@ Container::make('post_meta', 'verb_nutr_for', 'Показания')
     Field::make('textarea', 'nutr_for_6', 'Пункт 6'),
     Field::make('textarea', 'nutr_for_7', 'Пункт 7'),
   ));
+
+Container::make('post_meta', 'verb_faq_in_all_pages', 'Faq')
+->show_on_post_type('page')
+  ->add_fields(array(
+      Field::make('complex', 'faq_in_all_pages', 'Вопрос ответ')
+        ->add_fields(array(
+          Field::make('text', 'faq_q', 'Вопрос')->set_width(50),
+          Field::make('rich_text', 'faq_otv', 'Ответ')->set_width(50),
+        ))
+  ));

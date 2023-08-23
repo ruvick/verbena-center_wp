@@ -550,6 +550,8 @@ $arr_col_1 = carbon_get_the_post_meta('verb_subserice_vidi_uslug_col');
   
   -->
   
+  <?php get_template_part('template-parts/faq');?>
+
 
   <div class="subservice-reviews">
     <div class="leaf-20"></div>
@@ -573,4 +575,19 @@ $arr_col_1 = carbon_get_the_post_meta('verb_subserice_vidi_uslug_col');
       </div>
     </section>
   <?php endif;?>
-    <?php get_template_part('template-parts/question-page');?>
+  
+  
+  <?php
+    $seo_text =  get_field('seo_text');
+    if ($seo_text) {
+  ?>
+    <section class="services section-white">
+        <div class="container">
+            <?php echo $seo_text;?>
+        </div>
+    </section>
+  <?php
+    }
+  ?>
+
+<?php get_template_part('template-parts/question-page');?>

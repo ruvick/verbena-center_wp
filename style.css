@@ -4844,7 +4844,52 @@ a.policy_footer_lnk {
   height: auto;
 }
 
+/* faq */
 
+.faq_details{
+  width: 100%;
+}
+
+.faq_details .faq_otv p{
+  margin: 10px 0;
+}
+
+.faq_details .faq_otv{
+  padding: 0  20px 20px 20px; 
+}
+
+.faq_details summary:after{
+  content: "";
+  position: absolute;
+  width:20px;
+  height: 20px;
+  right:20px;
+  top:calc(50% - 10px);
+  background-image: url(./img/arrow.svg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.faq_details summary{
+  width:100%;
+  padding: 20px 40px;
+  list-style: none;
+  border: 3px solid #f2d8d9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq_details[open] summary:after{
+content: "";
+transform: rotate(90deg);
+}
+
+.faq_details[open] summary{
+}
+
+/* faq end*/
 
 @media only screen and (max-width:1700px) {
   .entry-content-page .rose {
