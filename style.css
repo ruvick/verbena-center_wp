@@ -3066,7 +3066,7 @@ table thead th,
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 35%;
+  width: 95%;
   margin: auto;
 }
 
@@ -3094,6 +3094,8 @@ table thead th,
   -ms-align-items: center;
   align-items: center;
   min-height: 350px;
+  margin:  0 55px;
+  
 }
 
 .before-after-img-wraper img {

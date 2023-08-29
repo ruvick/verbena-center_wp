@@ -51,10 +51,28 @@ jQuery(document).ready(function ($) {
   });
 
   $(".before-after-wrapper").slick({
-   adaptiveHeight: true,
+    adaptiveHeight: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     prevArrow: '<div class="slider-arrow slider-arrow-prev"></div>',
     nextArrow: '<div class="slider-arrow slider-arrow-next"></div>',
     dots: true,
+
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
   //  var width_video = $('.container-video').width;
   if ($(window).width() < 1150) {

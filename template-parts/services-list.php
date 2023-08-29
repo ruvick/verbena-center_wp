@@ -3,6 +3,10 @@
         <div class="service-item__photo b-lazy" data-src="<?php echo get_template_directory_uri();?>/img/service-1.jpg"></div>
         <div class="service-item__title">Лазерная косметология</div> 
       </a>
+      <a href="<?php echo get_the_permalink(2176);?>" class="service-item">
+        <div class="service-item__photo b-lazy" data-src="<?php echo get_template_directory_uri();?>/img/service-8.jpg"></div>
+        <div class="service-item__title">Микроигольчатый RF-лифтинг</div> 
+      </a>
       <a href="<?php echo get_the_permalink(1885);?>" class="service-item">
         <div class="service-item__photo b-lazy" data-src="<?php echo get_template_directory_uri();?>/img/service-7.jpg"></div>
         <div class="service-item__title">СМАС ЛИФТИНГ АЛЬТЕРА</div> 
