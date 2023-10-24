@@ -59,7 +59,7 @@ get_header();
 		    </div>
 		      <div class="subservice-descr__content">
 		        <div class="subservice-descr__content-title"><?php echo carbon_get_the_post_meta('verb_subserice_nutr_title_1');?></div>
-		        <div class="subservice-descr__content-text"><?php echo carbon_get_the_post_meta('verb_subserice_nutr_text_1');?></div>
+		        <div class="subservice-descr__content-text"><?php echo apply_filters( 'the_content', carbon_get_the_post_meta('verb_subserice_nutr_text_1'));?></div>
 		      </div>
 		  </div>
 		</section>
@@ -75,7 +75,7 @@ get_header();
 		  	<div class="container">
 		  		<h2 class="nutricevt-about__title"><?php echo carbon_get_the_post_meta('verb_subserice_nutr_cons_title');?></h2>
 		  		<div class="nutricevt-about__text uni_text text_full zag_center">
-		  			<?php echo carbon_get_the_post_meta('verb_subserice_nutr_cons_table');?></div>
+		  			<?php echo apply_filters( 'the_content', carbon_get_the_post_meta('verb_subserice_nutr_cons_table'));?></div>
 		  	</div>
 		  </section>
 		  <section class="subservice-descr" id="subservice-descr-nutr">

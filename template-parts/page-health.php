@@ -33,14 +33,14 @@ get_header();
 		    </div>
 		      <div class="subservice-descr__content">
 		        <div class="subservice-descr__content-title"><?php echo carbon_get_the_post_meta('verb_subserice_health_title');?></div>
-		        <div class="subservice-descr__content-text"><?php echo carbon_get_the_post_meta('verb_subserice_health_text');?></div>
+		        <div class="subservice-descr__content-text"><?php echo apply_filters( 'the_content', carbon_get_the_post_meta('verb_subserice_health_text'));?></div>
 		      </div>
 		  </section>
 		  <section class="nutricevt-about">
 		  	<div class="container">
 		  		<h2 class="nutricevt-about__title"><?php echo carbon_get_the_post_meta('verb_subserice_nutricevt_about_title');?></h2>
 		  		<div class="nutricevt-about__text">
-		  			<?php echo carbon_get_the_post_meta('verb_subserice_nutricevt_about_text');?>
+		  			<?php echo apply_filters( 'the_content', carbon_get_the_post_meta('verb_subserice_nutricevt_about_text'));?>
 		  		</div>
 		  	</div>
 		  </section>

@@ -1133,6 +1133,7 @@ a {
 }
 
 .about-wrapper {
+  
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1142,6 +1143,19 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between
+}
+
+.about-wrapper .has-text-align-center{ 
+  text-align: center;
+}
+
+.about-wrapper a:hover{ 
+  text-decoration: none;
+}
+
+.about-wrapper .has-text-align-center a{ 
+  color: #5a9a06;
+  text-decoration: underline;
 }
 
 .about-wrapper__text .section-title {
@@ -3257,10 +3271,10 @@ table thead th,
   background-image: url(./img/check.svg);
 }
 
-.nutricevt-about__text p:last-child {
+/* .nutricevt-about__text p:last-child {
   color: #4a9200;
   font-size: 20px;
-}
+} */
 
 .consult {
   margin: 60px auto;
