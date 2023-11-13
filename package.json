@@ -8,7 +8,7 @@
     "clear_r": "ssh verbena_asmi@verbena.beget.tech \"rm verbena-center.ru//public_html/wp-content/themes/verb/*.*\"",
     "send_r": "scp -C *.php *.png *.css verbena_asmi@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
     "send_ms": "scp -C *.css verbena_asmi@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
-    "send_one": "scp -C page-nutr.php verbena_asmi@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
+    "send_one": "scp -C category-novosti.php verbena_asmi@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
     "send_one1": "scp -C page-health.php verbena_asmi@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
     "send_head": "scp -C header.php verbena_asmi@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",
     "send_cat": "scp -C category.php verbena_asmi@verbena.beget.tech:verbena-center.ru//public_html/wp-content/themes/verb/",

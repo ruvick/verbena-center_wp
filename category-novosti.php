@@ -2,6 +2,15 @@
 
 get_header();
 ?>
+
+			
+<div class="container">
+			<?php
+			if ( function_exists('yoast_breadcrumb') ) {
+			  yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+			}?>
+		</div>
+		
 <section id="primary" class="site-content">
 	<div id="content" role="main">
 		<?php 
