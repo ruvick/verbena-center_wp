@@ -68,10 +68,10 @@ get_header();
 			<?php endif; ?>
 	</div>
 	
-	<?php wp_pagenavi(); ?>
 	
+
 	<div class="btn-wrap btn-wrap-news">
-      <a href="<?php echo get_category_link(3);?>" class="more-news">Смотреть все новости</a>
+      <?php wp_pagenavi(); ?>
     </div>
 </section>
 

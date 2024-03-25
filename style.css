@@ -6998,3 +6998,15 @@ transform: rotate(90deg);
     height: 250px;
   }
 }
+
+.wp-pagenavi .current {
+  background-color: #84cc3a;
+  color: white!important;
+  border-color: #84cc3a!important;
+}
+
+.wp-pagenavi span,
+.wp-pagenavi a
+{
+  padding: 10px 20px;
+}
