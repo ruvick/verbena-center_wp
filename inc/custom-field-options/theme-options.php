@@ -45,8 +45,13 @@ Container::make( 'theme_options', 'as_theme_options',  __( 'Theme Options' ) )
           ->set_width(50),  
         Field::make( 'text', 'as_email', __( 'Email' ) )
           ->set_width(50),
+        
         Field::make( 'text', 'as_email_send', __( 'Email для отправки' ) )
           ->set_width(50),
+        
+        Field::make( 'text', 'as_tg_send', __( 'Telegram для отправки' ) )
+          ->set_width(50),
+
         Field::make( 'text', 'as_inn', __( 'ИНН' ) )
           ->set_width(50),
         Field::make( 'text', 'as_orgn', __( 'ОРГН' ) )

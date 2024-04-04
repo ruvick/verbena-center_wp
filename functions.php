@@ -2,6 +2,8 @@
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
+
+
 /**
  * verbena functions and definitions
  *
@@ -130,6 +132,46 @@ function verb_widgets_init() {
 }
 add_action( 'widgets_init', 'verb_widgets_init' );
 
+
+function tg_text_clear($text){
+	$result = str_replace(["<br/>", "<br>"],"\n\r", $text);
+	return $result;
+}
+
+
+function message_to_telegram($text)
+{
+	$arr_chat = carbon_get_theme_option( 'as_tg_send' );
+	if($arr_chat) {
+
+		$arr_chat = explode(",",$arr_chat);
+	    $ch = curl_init();
+		
+		for ($i = 0; $i<count($arr_chat); $i++) {
+		    curl_setopt_array(
+		        $ch,
+		        array(
+		            CURLOPT_URL => 'https://api.telegram.org/bot' . TELEGRAM_TOKEN . '/sendMessage',
+		            CURLOPT_POST => TRUE,
+		            CURLOPT_RETURNTRANSFER => TRUE,
+		            CURLOPT_TIMEOUT => 10,
+		            CURLOPT_POSTFIELDS => array(
+		                'chat_id' => trim($arr_chat[$i]),
+		                'text' => tg_text_clear($text),
+						'parse_mode' => "html",
+		            ),
+		        )
+		    );
+		    $output = curl_exec($ch);
+		}
+	}
+	
+}
+
+
+
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -238,14 +280,18 @@ add_action( 'wp_ajax_universal_send_review', 'universal_send_review' );
     
     //   add_filter('wp_mail_content_type', "text/html");
       if ($_REQUEST["qvm"] === "1") {
-		if (wp_mail(carbon_get_theme_option( 'as_email_send' ), 'Вопрос с сайта', '<strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"]. '<br/><strong>Вопрос: </strong>' . $_REQUEST['review'], $headers))
+		$text_tg = '<b>Вопрос с сайта<b> <br><br> <strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"]. '<br/><strong>Вопрос: </strong>' . $_REQUEST['review'];
+		message_to_telegram($text_tg);
+		if (wp_mail(carbon_get_theme_option( 'as_email_send' ), 'Вопрос с сайта 1', '<strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"]. '<br/><strong>Вопрос: </strong>' . $_REQUEST['review'], $headers))
 		{
 			to_crm ($_REQUEST["name"], $_REQUEST["tel"], "Заявка с формы: ".$_REQUEST["msg"]." Вопрос:".$_REQUEST['review']);
 			wp_die("<span style = 'color:green;'>Мы свяжемся с Вами в ближайшее время.</span>");
 		}
 		else wp_die("<span style = 'color:red;'>Сервис недоступен попробуйте позднее.</span>");
 	  } else {
-		if (wp_mail(carbon_get_theme_option( 'as_email_send' ), 'Заказ с сайта', '<strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"]. '<br/><strong>Отзыв: </strong>' . $_REQUEST['review'], $headers))
+		$text_tg = '<b>Заказ с сайта</b> <br><br> <strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"]. '<br/><strong>Отзыв: </strong>' . $_REQUEST['review'];
+		message_to_telegram($text_tg);
+		if (wp_mail(carbon_get_theme_option( 'as_email_send' ), 'Заказ с сайта 11', '<strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"]. '<br/><strong>Отзыв: </strong>' . $_REQUEST['review'], $headers))
 		{
 			
 			to_crm ($_REQUEST["name"], $_REQUEST["tel"], "Заявка с формы: ".$_REQUEST["msg"]." Отзыв:".$_REQUEST['review']);
@@ -253,6 +299,9 @@ add_action( 'wp_ajax_universal_send_review', 'universal_send_review' );
 		}
 		else wp_die("<span style = 'color:red;'>Сервис недоступен попробуйте позднее.</span>");
       }
+
+	  
+
     } else {
       wp_die( 'НО-НО-НО!', '', 403 );
     }
@@ -292,6 +341,10 @@ add_action( 'wp_ajax_universal_send_review', 'universal_send_review' );
     
     //   add_filter('wp_mail_content_type', "text/html");
       //carbon_get_theme_option( 'as_email_send' )
+
+	$text_tg = '<b>'. $title_mail .'</b> <br><br> <strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"];
+	message_to_telegram($text_tg);
+
       if (wp_mail(carbon_get_theme_option( 'as_email_send' ), $title_mail, '<strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"], $headers))
 	  {
 		  to_crm ($_REQUEST["name"], $_REQUEST["tel"], "Заявка с формы: ".$_REQUEST["msg"]);
