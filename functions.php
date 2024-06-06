@@ -280,16 +280,17 @@ add_action( 'wp_ajax_universal_send_review', 'universal_send_review' );
     
     //   add_filter('wp_mail_content_type', "text/html");
       if ($_REQUEST["qvm"] === "1") {
-		$text_tg = '<b>Вопрос с сайта<b> <br><br> <strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"]. '<br/><strong>Вопрос: </strong>' . $_REQUEST['review'];
+		$text_tg = '<b>Вопрос с сайта</b> <br><br> <strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br> <strong>Имя:</strong> '.$_REQUEST["name"].' <br> <strong>Телефон:</strong> '.$_REQUEST["tel"]. '<br><strong>Вопрос: </strong>' . $_REQUEST['review'];
 		message_to_telegram($text_tg);
 		if (wp_mail(carbon_get_theme_option( 'as_email_send' ), 'Вопрос с сайта 1', '<strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"]. '<br/><strong>Вопрос: </strong>' . $_REQUEST['review'], $headers))
 		{
 			to_crm ($_REQUEST["name"], $_REQUEST["tel"], "Заявка с формы: ".$_REQUEST["msg"]." Вопрос:".$_REQUEST['review']);
-			wp_die("<span style = 'color:green;'>Мы свяжемся с Вами в ближайшее время.</span>");
+			wp_die("<span style = 'color:green;'>Мы свяжемся с Вами в ближайшее время!</span>");
 		}
 		else wp_die("<span style = 'color:red;'>Сервис недоступен попробуйте позднее.</span>");
 	  } else {
 		$text_tg = '<b>Заказ с сайта</b> <br><br> <strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"]. '<br/><strong>Отзыв: </strong>' . $_REQUEST['review'];
+		
 		message_to_telegram($text_tg);
 		if (wp_mail(carbon_get_theme_option( 'as_email_send' ), 'Заказ с сайта 11', '<strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"]. '<br/><strong>Отзыв: </strong>' . $_REQUEST['review'], $headers))
 		{
