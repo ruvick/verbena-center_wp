@@ -229,21 +229,7 @@ Container::make('post_meta', 'verb_subserice_result_adv', 'Результаты 
   ));
   
   
- Container::make('post_meta', 'verb_subserice_result_adv', 'Результаты и  преимущества') 
-  ->show_on_template('page-price.php')
-  ->add_fields(array(
-    
-    Field::make('complex', 'price_all', 'Все цены клиники')
-      ->set_width(100)
-      ->add_fields(array(
-        
-        Field::make('text', 'price_all_title', 'Заголовок')
-          ->set_width(100),
-        Field::make('rich_text', 'price_all_table', 'Текст')
-		  ->set_width(100),
-      ))
-  ));
-  
+
 Container::make('post_meta', 'verb_subserice_price', 'Стоимость процедуры')
   ->show_on_template('page-subserice.php')
   ->add_fields(array(
@@ -518,3 +504,21 @@ Container::make('post_meta', 'verb_faq_in_all_pages', 'Faq')
           Field::make('rich_text', 'faq_otv', 'Ответ')->set_width(50),
         ))
   ));
+
+
+  Container::make('post_meta', 'verb_price', 'Список цен') 
+  // ->where( 'post_template', '=', 'page-price.php')
+  // ->where( 'post_type', '=', 'page' )
+  ->show_on_post_type('page')
+  ->add_fields(array(
+
+    Field::make('complex', 'price_all', 'Все цены клиники')
+      ->add_fields(array(
+        
+        Field::make('text', 'price_all_title', 'Заголовок')
+          ->set_width(100),
+        Field::make('rich_text', 'price_all_table', 'Текст')
+		  ->set_width(100),
+      ))
+  ));
+  
