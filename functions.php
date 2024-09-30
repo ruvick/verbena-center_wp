@@ -348,7 +348,7 @@ add_action( 'wp_ajax_universal_send_review', 'universal_send_review' );
 
       if (wp_mail(carbon_get_theme_option( 'as_email_send' ), $title_mail, '<strong>С какой формы:</strong> '.$_REQUEST["msg"].'<br/> <strong>Имя:</strong> '.$_REQUEST["name"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"], $headers))
 	  {
-		  to_crm ($_REQUEST["name"], $_REQUEST["tel"], "Заявка с формы: ".$_REQUEST["msg"]);
+		//   to_crm ($_REQUEST["name"], $_REQUEST["tel"], "Заявка с формы: ".$_REQUEST["msg"]);
 		  wp_die("<span style = 'color:green;'>Мы свяжемся с Вами в ближайшее время.</span>");
       }
 	  else wp_die("<span style = 'color:red;'>Сервис недоступен попробуйте позднее.</span>");

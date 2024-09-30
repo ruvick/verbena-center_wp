@@ -256,6 +256,7 @@ jQuery(document).ready(function ($) {
       if ((phone == "")||(phone.indexOf("_")>0)) {
         $(this).siblings('input[type=tel]').css("background-color","#ff91a4")
       } else {
+        jQuery(this).css( "display", "none" );
         var  jqXHR = jQuery.post(
           allAjax.ajaxurl,
           {
@@ -270,29 +271,31 @@ jQuery(document).ready(function ($) {
         
         
         jqXHR.done(function (responce) {
-          console.log(responce);
-			ym(47540161, 'reachGoal', 'send_ok');
-		  if (message.indexOf("звонка") >= 0) {
+          jQuery(this).css( "display", "block" );
+          ym(47540161, 'reachGoal', 'send_ok');
+		      if (message.indexOf("звонка") >= 0) {
 			
-			if (jQuery('#zvonok-modal').is(':visible')) jQuery('#zvonok-modal').arcticmodal('close');
-			jQuery(elementTel).val(""); jQuery(elementName).val("");
-			  jQuery('#messgeModal #lineMsg').html("Мы перезвоним Вам в ближайшее время.");
-		  }
-		else
-		{
-			if (jQuery('#order-modal').is(':visible'))  jQuery('#order-modal').arcticmodal('close');
-			jQuery(elementTel).val(""); jQuery(elementName).val("");
-			jQuery('#messgeModal #lineMsg').html("Ваша заявка принята. Мы свяжемся с Вами в ближайшее время.");
-		}      
-      $.arcticmodal('close');   
-		 jQuery('#messgeModal').arcticmodal();
-          
+			    if (jQuery('#zvonok-modal').is(':visible')) 
+            jQuery('#zvonok-modal').arcticmodal('close');
+			    
+          jQuery(elementTel).val(""); jQuery(elementName).val("");
+			    jQuery('#messgeModal #lineMsg').html("Мы перезвоним Вам в ближайшее время.");
+          }
+          else
+          {
+            if (jQuery('#order-modal').is(':visible'))  jQuery('#order-modal').arcticmodal('close');
+            jQuery(elementTel).val(""); jQuery(elementName).val("");
+            jQuery('#messgeModal #lineMsg').html("Ваша заявка принята. Мы свяжемся с Вами в ближайшее время.");
+          }      
+           $.arcticmodal('close');   
+          jQuery('#messgeModal').arcticmodal();
         });
         
         jqXHR.fail(function (responce) {
           jQuery('#messgeModal #lineIcon').html('');
           jQuery('#messgeModal #lineMsg').html("Произошла ошибка! Попробуйте позднее.");
           jQuery('#messgeModal').arcticmodal();
+          jQuery(this).css( "display", "block" );
         });
       }
     });

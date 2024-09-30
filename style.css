@@ -194,6 +194,11 @@ button:-moz-focusring {
   outline: 1px dotted ButtonText
 }
 
+
+a:disabled {
+  pointer-events: none;
+}
+
 /* input[type=checked] { 
   border: #84cc3a;
 } */

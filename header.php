@@ -188,6 +188,7 @@
 			
             <?php get_template_part('template-parts/form-policy-element'); ?>
 			
+            <p></p>
             <a href="#" class="uniSendBtn-review button-green" onclick="ym(47540161, 'reachGoal', 'Otziv'); ga('send', 'event', 'Zayavki', 'Otziv_G'); return true;">Отправить</a>
           </form>
     </div>
