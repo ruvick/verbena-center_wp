@@ -19,7 +19,8 @@
       <div class="footer-name">© ООО Центр Лечебной Косметологии "Вербена"</div>
       <div class="footer-licence">Медицинская лицензия №ЛО-46-01-002067 <br/>от 03 декабря 2018 года  выдана Комитетом <br/>здравоохранения Курской области, 305000.</div>
       <div class="footer-string">г. Курск, Красная пл., 6, +7(471) 251-47-20</div>
-      <a class = "policy_footer_lnk" href="<?php the_permalink(1939)?>">Персональные данные</a>
+      <a class = "policy_footer_lnk" href="<?php the_permalink(1939)?>">Персональные данные</a><br>
+      <a class = "policy_footer_lnk" href="<?php the_permalink(69)?>">Политика конфиденциальности</a>
     </div>
 
     
@@ -44,7 +45,7 @@
     </div>
   </div>
   <div class="container footer-bottom">
-    Информация, предоставленная на данном сайте не является публичной офертой или коммерческим предложением. Вся информация размещена с ознакомительной целью и не должна использоваться для самостоятельной диагностики либо лечения. Имеются противопоказания, необходима консультация специалиста.
+    Информация, предоставленная на данном сайте не является публичной офертой или коммерческим предложением. Вся информация размещена с ознакомительной целью и не должна использоваться для самостоятельной диагностики либо лечения. Имеются противопоказания, необходима консультация специалиста. Мы используем cookie-файлы для удобства использования данного сайта. Оставаясь на сайте, вы соглашаетесь с использованием файлов cookie.
   </div>
 
   
@@ -72,7 +73,8 @@
 <!--Виджеты-->
  <!--<script type="text/javascript" src="//api.venyoo.ru/wnew.js?wc=venyoo/default/science&widget_id=6602254346485760"></script>-->
 
- <script src="//code.jivosite.com/widget.js" data-jv-id="8qT1qeMfkP" async></script>
+<script src="//code.jivosite.com/widget.js" data-jv-id="8qT1qeMfkP" async></script>
+
 <script type="text/javascript"> 
 jQuery(document).ready(function ($) {
     

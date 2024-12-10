@@ -24,15 +24,6 @@
 <link rel='stylesheet' id='fonts-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A300%2C400%2C500&#038;display=swap&#038;subset=cyrillic&#038;ver=5.7.3' type='text/css' media="print" onload="this.media='all'" />
   <?php wp_head(); ?>
   
-<!-- Global site tag (gtag.js) - Google Analytics clkverbena@gmail.com -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144095936-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-144095936-1');
-</script>
 
 	
 	
